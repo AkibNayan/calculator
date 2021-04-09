@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale='1.0'">
+	<title>Scientific_Calculator</title>
+	<!-- custorm css link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="calculator-body">
+		<center><h2>Scientific Calculator</h2></center>
+		<form name="forms" class="form">
+			<input type="text" name="display" class="display">
+			<div class="buttons">
+				<input type="button" class="btn" value="9" onclick="count('9')">
+				<input type="button" class="btn" value="8" onclick="count('8')">
+				<input type="button" class="btn" value="7" onclick="count('7')">
+				<input type="button" class="btn" value="DEL" onclick="del()">
+				<input type="button" class="btn last" value="AC" onclick="ac()"><br/>
+				<input type="button" class="btn" value="6" onclick="count('6')">
+				<input type="button" class="btn" value="5" onclick="count('5')">
+				<input type="button" class="btn" value="4" onclick="count('4')">
+				<input type="button" class="btn" value="+" onclick="count('+')">
+				<input type="button" class="btn last" value="-" onclick="count('-')"><br/>
+				<input type="button" class="btn" value="3" onclick="count('3')">
+				<input type="button" class="btn" value="2" onclick="count('2')">
+				<input type="button" class="btn" value="1" onclick="count('1')">
+				<input type="button" class="btn" value="*" onclick="count('*')">
+				<input type="button" class="btn last" value="/" onclick="count('/')"><br/>
+				<input type="button" class="btn" value="0" onclick="count('0')">
+				<input type="button" class="btn" value="." onclick="count('.')">
+				<input type="button" class="btn" value="(" onclick="count('(')">
+				<input type="button" class="btn" value=")" onclick="count(')')">
+				<input type="button" class="btn last" value="&#8730" onclick="sqrt()"><br/>
+				<input type="button" class="btn" value="%" onclick="per()">
+				<input type="button" class="btn" value="x!" onclick="fact()">
+				<input type="button" class="btn" value="rad" onclick="rad()">
+				<input type="button" class="btn" value="x&#178" onclick="square()">
+				<input type="button" class="btn last" value="log" onclick="logarithm()"><br/>
+				<input type="button" class="btn" value="ln" onclick="lan()">
+				<input type="button" class="btn" value="pi" onclick="pi()">
+				<input type="button" class="btn" value="sin" onclick="sine()">
+				<input type="button" class="btn" value="cos" onclick="cos()">
+				<input type="button" class="btn last" value="tan" onclick="tan()"><br/>
+				<input type="button" class="btn extra" value="deg" onclick="deg()">
+				<input type="button" class="btn" value="=" onclick="equal()">
+			</div>
+		</form>
+	</div>
+
+
+	<script src="main.js"></script>
+</body>
+</html>
